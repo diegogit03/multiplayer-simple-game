@@ -1,14 +1,14 @@
 class Game {
 
     constructor (
-        private screen: CanvasRenderingContext2D
+        private screenContext: CanvasRenderingContext2D
     ) {
         this.prepareScreen();
     }
 
-    private prepareScreen () {
-        this.screen.fillStyle = '#000';
-        this.screen.rect(150, 150, 150, 150);
+    private prepareScreen (): void {
+        this.screenContext.fillStyle = '#000';
+        this.screenContext.fillRect(10, 10, 100, 100);
     }
 
 }
